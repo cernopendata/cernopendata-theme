@@ -61,7 +61,7 @@ install:
   - "travis_retry pip install -r .travis-${REQUIREMENTS}-requirements.txt"
   - "travis_retry pip install -e .[all]"
   - "npm update"
-  - "npm install --silent clean-css requirejs"
+  - "npm install --silent node-sass@3.8.0 clean-css requirejs uglify-js"
 
 script:
   - "./run-tests.sh"
