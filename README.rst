@@ -43,7 +43,5 @@
 
 Theme for CERN Open Data Portal.
 
-*This is an experimental developer preview release.*
-
 * Free software: GPLv2 license
 * Documentation: https://cernopendata-theme.readthedocs.io/
