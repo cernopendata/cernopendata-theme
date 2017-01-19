@@ -70,7 +70,3 @@ def test_view(app, script_info):
     with app.test_client() as client:
         response = client.get('/')
         assert response.status_code == 200
-
-    # Clean cache
-    result = runner.invoke(assets, ['clean'], obj=script_info)
-    assert result.exit_code == 0
