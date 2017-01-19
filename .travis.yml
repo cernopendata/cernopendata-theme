@@ -68,3 +68,15 @@ script:
 
 after_success:
   - coveralls
+
+deploy:
+  provider: pypi
+  user: jirikuncar
+  password:
+    secure: pAK52rblj0CJ4cCe7kuU++jnh8h/xDAIqjNbBYBIdCgDzJL4pQzqtIyZ+D/78is0jH/RD/VqdIt9fvRTXnq4E27kgUHl7hNGMQjblvGUQVzWLe/pj+tKl1Pug5mGqU59+dGHuvG/Rzg2pD+RRrnzGty+/tpb9ZT9m8oScnCAdk49+MM2yb1XkedazPEuQ8X/aaihoKEf7e0gDT6/W7qOCGeXiXJpIfYHuYPEZIQmi1Sm+uEoWYCIVyA4GoLhRcs3y9wSGQpBkq6xqB+N3qNXMHAElyOaZu0Q27rMVRMlK26LO8bzuZskO2byqj6pPF0lFtsMicCmniYW457/xJY1xazYZ8Ll9miDRH5RRlg6BvTVAtAvgsxr6hjq3/bWxiJedyCW/Kq5tWy2yjhyHvYz7F2l1iGBdc8Nah1jL/8QU096b1XjUNET9RtwDGhICkQ2JbVQr6QKTuyNLkKiXdioqM/bemk7iFckE2T1NXev5TzWvwn+jfd0sS8J/CFbDvXrJdmxqGIGNXQ2r6d7O2IivNFBH4mrMMin2aqFlY/ZO+YSz+MQzw434pcjssXYa1QMgpzsYp0RadQz3wBF2RoKqPlNA1dZVaNyIoq8MmPUDbuu8KtnPSXHUxwLHOXPLZMzBkavyk5HJww260irQXgQJvIGuBIzttuQZE8U7VumMJI=
+  distributions: "sdist bdist_wheel"
+  on:
+    tags: true
+    repo: cernopendata/cernopendata-theme
+    python: "2.7"
+    condition: $REQUIREMENTS = release
