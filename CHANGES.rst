@@ -25,6 +25,10 @@
 Changes
 =======
 
+Version 1.0.1 (released 2017-01-20)
+
+- Adds missing frontpage.scss and logos.
+
 Version 1.0.0 (released 2017-01-19)
 
 - Initial public release.

@@ -1,8 +1,8 @@
 ===========================
- cernopendata-theme v1.0.0
+ cernopendata-theme v1.0.1
 ===========================
 
-cernopendata-theme v1.0.0 was released on January 19, 2017.
+cernopendata-theme v1.0.1 was released on January 20, 2017.
 
 About
 -----
@@ -12,12 +12,12 @@ Theme for CERN Open Data Portal.
 What's new
 ----------
 
-- Initial public release.
+- Adds missing frontpage.scss and logos.
 
 Installation
 ------------
 
-   $ pip install cernopendata-theme==1.0.0
+   $ pip install cernopendata-theme==1.0.1
 
 Happy hacking and thanks for flying cernopendata-theme.
 
