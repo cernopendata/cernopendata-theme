@@ -54,7 +54,7 @@ def instance_path():
 
 @pytest.yield_fixture()
 def static_folder(instance_path):
-    """Static file directory."""
+    """Statics file directory."""
     pth = os.path.join(instance_path, 'static')
     if not os.path.exists(pth):
         os.makedirs(pth)
